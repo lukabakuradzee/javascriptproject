@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="btn1">Create Random Number</button>
+    <div>
+      <h1>Skip Number Example</h1>
+      <span>Click the button to skip the number 5:</span>
+      <button id="skipButton">Skip Number</button>
+    </div>
+
+    <ul></ul>
+
+    <form id="userForm">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" />
+      <br />
+
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" />
+      <br/>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+      <br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <section>
+      <h1>Bank Account Management</h1>
+
+    <div>
+        <h2>Account Information</h2>
+        <p>Account Number: <span id="accountNumber">12345</span></p>
+        <p>Account Holder: <span id="accountHolder">Test User</span></p>
+        <p>Account Balance: $<span id="balance">1000</span></p>
+    </div>
+
+    <div>
+        <h2>Actions</h2>
+        <label for="depositAmount">Deposit Amount:</label>
+        <input type="number" id="depositAmount">
+        <button onclick="deposit()">Deposit</button>
+
+        <br>
+
+        <label for="withdrawAmount">Withdraw Amount:</label>
+        <input type="number" id="withdrawAmount">
+        <button onclick="withdraw()">Withdraw</button>
+    </div>
+  </section>
+    <script src="script.js"></script>
+  </body>
+</html>
