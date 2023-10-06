@@ -188,17 +188,15 @@ function deposit() {
     }
 }
 
-
 function withdraw() {
     const withdrawAmount = parseFloat(document.getElementById('withdrawAmount').value);
-    if(!isNaN(withdrawAmount) && withdrawAmount > 0) {
+    if (!isNaN(withdrawAmount) && withdrawAmount > 0) {
         account1.withdraw(withdrawAmount);
-        updateAccountInfo;
-    } 
-
-    else {
-        alert('invalid withdrawal amount. Amount must be a positive number.')
+        updateAccountInfo();
+    } else {
+        alert("Invalid withdrawal amount. Amount must be a positive number.");
     }
 }
 
-updateAccountInfo(); // Initial display of account information 
+// Initial display of account information
+updateAccountInfo();
