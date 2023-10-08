@@ -1,21 +1,22 @@
 "use strict";
 
+
 // Display an alert message and prompt for age
 
-    let alertMessage = alert('Hello, this is my final exam page');
-    let enterAge = prompt('Enter your age');
+//     let alertMessage = alert('Hello, this is my final exam page');
+//     let enterAge = prompt('Enter your age');
 
-    // Function to check age
-function ageCheck() {
-    if (enterAge < 18) {
-        prompt('you are under 18');
-    } else {
-        alert('you are an adult, welcome');
-    }
-}
+//     // Function to check age
+// function ageCheck() {
+//     if (enterAge < 18) {
+//         prompt('you are under 18');
+//     } else {
+//         alert('you are an adult, welcome');
+//     }
+// }
 
 // Call the ageCheck function
-ageCheck();
+// ageCheck();
 
 // Add an event listener to generate a random number
 let btn = document.getElementById("btn1");
